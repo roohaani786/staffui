@@ -432,7 +432,7 @@ class _LoginPageState extends State<LoginPage> {
                     onTap: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => Login()),
+                        MaterialPageRoute(builder: (context) => MyHomePage()),
                       );
                     },
                     child: new Text("Are you a Student? , Register as Student",
@@ -446,20 +446,20 @@ class _LoginPageState extends State<LoginPage> {
                   Padding(padding: EdgeInsets.only(top: 2.0)),
 
 
-                  new GestureDetector(
-//                    onTap: () {
-//                      Navigator.push(
-//                        context,
-//                        MaterialPageRoute(builder: (context) => Dashboard()),
-//                      );
-//                    },
-                    child: new Text(">> SKIP",
-                      style: TextStyle(
-                        color: Colors.white,
-                        decoration: TextDecoration.underline,
-                        fontSize: 17.0,
-                      ),),
-                  ),
+//                  new GestureDetector(
+////                    onTap: () {
+////                      Navigator.push(
+////                        context,
+////                        MaterialPageRoute(builder: (context) => Dashboard()),
+////                      );
+////                    },
+//                    child: new Text(">> SKIP",
+//                      style: TextStyle(
+//                        color: Colors.white,
+//                        decoration: TextDecoration.underline,
+//                        fontSize: 17.0,
+//                      ),),
+//                  ),
 
 
                 ],

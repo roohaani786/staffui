@@ -440,20 +440,20 @@ class _MyHomePageState extends State<MyHomePage> {
                     Padding(padding: EdgeInsets.only(top: 2.0)),
 
 
-                    new GestureDetector(
-//                      onTap: () {
-//                        Navigator.push(
-//                          context,
-//                          MaterialPageRoute(builder: (context) => Dashboard()),
-//                        );
-//                      },
-                      child: new Text(">> SKIP",
-                        style: TextStyle(
-                          color: Colors.white,
-                          decoration: TextDecoration.underline,
-                          fontSize: 17.0,
-                        ),),
-                    ),
+//                    new GestureDetector(
+////                      onTap: () {
+////                        Navigator.push(
+////                          context,
+////                          MaterialPageRoute(builder: (context) => Dashboard()),
+////                        );
+////                      },
+//                      child: new Text(">> SKIP",
+//                        style: TextStyle(
+//                          color: Colors.white,
+//                          decoration: TextDecoration.underline,
+//                          fontSize: 17.0,
+//                        ),),
+//                    ),
                   ],
                 ),
               ),
