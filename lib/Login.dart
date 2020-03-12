@@ -35,12 +35,9 @@ class _LoginPageState extends State<LoginPage> {
 
   @override
   Widget build(BuildContext context) {
-
-
-
-    final emailorphoneField = Material(
+    final nameField = Material(
       elevation: 20.0,
-      borderRadius: BorderRadius.circular(32.0),
+      borderRadius: BorderRadius.circular(22.0),
       color: Colors.red,
       shadowColor: Colors.black,
 
@@ -51,7 +48,7 @@ class _LoginPageState extends State<LoginPage> {
         style: new TextStyle(color: Colors.black),
         decoration: InputDecoration(
           contentPadding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
-          hintText: "Email or Mobile No.",
+          hintText: "Name",
 
           hintStyle: TextStyle(fontSize: 17.0, color: Colors.grey),
           focusedBorder: OutlineInputBorder(
@@ -69,10 +66,9 @@ class _LoginPageState extends State<LoginPage> {
     );
 
 
-
-    final passwordField = Material(
+    final contactField = Material(
       elevation: 20.0,
-      borderRadius: BorderRadius.circular(32.0),
+      borderRadius: BorderRadius.circular(22.0),
       color: Colors.red,
       shadowColor: Colors.black,
 
@@ -81,6 +77,207 @@ class _LoginPageState extends State<LoginPage> {
         obscureText: false,
         cursorColor: Colors.black,
         style: new TextStyle(color: Colors.black),
+        decoration: InputDecoration(
+          contentPadding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
+          hintText: "Contact No.",
+
+          hintStyle: TextStyle(fontSize: 17.0, color: Colors.grey),
+          focusedBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(32.0),
+            borderSide: BorderSide(color: Colors.white, width: 5.0,),
+          ),
+          enabledBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(32.0),
+            borderSide: BorderSide(color: Colors.white, width: 5.0),
+          ),
+          filled: true,
+          fillColor: Colors.white,
+        ),
+      ),
+    );
+
+
+    final addressField = Material(
+      elevation: 20.0,
+      borderRadius: BorderRadius.circular(22.0),
+      color: Colors.red,
+      shadowColor: Colors.black,
+
+      child: TextFormField(
+
+        obscureText: false,
+        cursorColor: Colors.black,
+        style: new TextStyle(color: Colors.black),
+
+        decoration: InputDecoration(
+          contentPadding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
+          hintText: "Address",
+
+          hintStyle: TextStyle(fontSize: 17.0, color: Colors.grey),
+          focusedBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(32.0),
+            borderSide: BorderSide(color: Colors.white, width: 5.0,),
+          ),
+          enabledBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(32.0),
+            borderSide: BorderSide(color: Colors.white, width: 5.0),
+          ),
+          filled: true,
+          fillColor: Colors.white,
+        ),
+      ),
+    );
+
+
+    final emailField = Material(
+      elevation: 20.0,
+      borderRadius: BorderRadius.circular(22.0),
+      color: Colors.red,
+      shadowColor: Colors.black,
+
+
+      child: TextFormField(
+
+        obscureText: false,
+        cursorColor: Colors.black,
+        style: new TextStyle(color: Colors.black),
+
+        decoration: InputDecoration(
+          contentPadding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
+          hintText: "Email",
+
+          hintStyle: TextStyle(fontSize: 17.0, color: Colors.grey),
+          focusedBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(32.0),
+            borderSide: BorderSide(color: Colors.white, width: 5.0,),
+          ),
+          enabledBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(32.0),
+            borderSide: BorderSide(color: Colors.white, width: 5.0),
+          ),
+          filled: true,
+          fillColor: Colors.white,
+        ),
+
+      ),
+    );
+
+
+    final designationField = Material(
+      elevation: 20.0,
+      borderRadius: BorderRadius.circular(22.0),
+      color: Colors.red,
+      shadowColor: Colors.black,
+
+
+      child: TextFormField(
+
+        obscureText: false,
+        cursorColor: Colors.black,
+        style: new TextStyle(color: Colors.black),
+
+        decoration: InputDecoration(
+          contentPadding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
+          hintText: "Designation",
+
+          hintStyle: TextStyle(fontSize: 17.0, color: Colors.grey),
+          focusedBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(32.0),
+            borderSide: BorderSide(color: Colors.white, width: 5.0,),
+          ),
+          enabledBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(32.0),
+            borderSide: BorderSide(color: Colors.white, width: 5.0),
+          ),
+          filled: true,
+          fillColor: Colors.white,
+        ),
+
+      ),
+    );
+
+
+    final departmentField = Material(
+      elevation: 20.0,
+      borderRadius: BorderRadius.circular(22.0),
+      color: Colors.red,
+      shadowColor: Colors.black,
+
+
+      child: TextFormField(
+
+        obscureText: false,
+        cursorColor: Colors.black,
+        style: new TextStyle(color: Colors.black),
+
+        decoration: InputDecoration(
+          contentPadding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
+          hintText: "Department",
+
+          hintStyle: TextStyle(fontSize: 17.0, color: Colors.grey),
+          focusedBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(32.0),
+            borderSide: BorderSide(color: Colors.white, width: 5.0,),
+          ),
+          enabledBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(32.0),
+            borderSide: BorderSide(color: Colors.white, width: 5.0),
+          ),
+          filled: true,
+          fillColor: Colors.white,
+        ),
+
+      ),
+    );
+
+
+    final yearField = Material(
+      elevation: 20.0,
+      borderRadius: BorderRadius.circular(22.0),
+      color: Colors.red,
+      shadowColor: Colors.black,
+
+
+      child: TextFormField(
+
+        obscureText: false,
+        cursorColor: Colors.black,
+        style: new TextStyle(color: Colors.black),
+
+        decoration: InputDecoration(
+          contentPadding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
+          hintText: "Year",
+
+          hintStyle: TextStyle(fontSize: 17.0, color: Colors.grey),
+          focusedBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(32.0),
+            borderSide: BorderSide(color: Colors.white, width: 5.0,),
+          ),
+          enabledBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(32.0),
+            borderSide: BorderSide(color: Colors.white, width: 5.0),
+          ),
+          filled: true,
+          fillColor: Colors.white,
+        ),
+
+      ),
+    );
+
+
+    final passwordField = Material(
+      elevation: 20.0,
+      borderRadius: BorderRadius.circular(22.0),
+      color: Colors.red,
+      shadowColor: Colors.black,
+
+
+      child: TextFormField(
+
+        obscureText: true,
+        cursorColor: Colors.black,
+        style: new TextStyle(color: Colors.black),
+
         decoration: InputDecoration(
           contentPadding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
           hintText: "Password",
@@ -97,14 +294,9 @@ class _LoginPageState extends State<LoginPage> {
           filled: true,
           fillColor: Colors.white,
         ),
+
       ),
     );
-
-
-
-   // OutlineInputBorder(borderRadius: BorderRadius.circular(32.0)),
-
-
 
 
 //    final loginButon = Material(
@@ -127,7 +319,10 @@ class _LoginPageState extends State<LoginPage> {
       borderRadius: BorderRadius.circular(30.0),
       color: Colors.white,
       child: MaterialButton(
-        minWidth: MediaQuery.of(context).size.width,
+        minWidth: MediaQuery
+            .of(context)
+            .size
+            .width,
         padding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
         onPressed: () {
 //          Navigator.push(
@@ -135,7 +330,7 @@ class _LoginPageState extends State<LoginPage> {
 //            MaterialPageRoute(builder: (context) => Signup()),
 //          );
         },
-        child: Text("Login",
+        child: Text("REGISTER",
             textAlign: TextAlign.center,
             style: style.copyWith(
                 color: Colors.red, fontWeight: FontWeight.bold)),
@@ -143,104 +338,136 @@ class _LoginPageState extends State<LoginPage> {
     );
 
 
-
-
-
     return Scaffold(
 
 
       body: Center(
+
         child: Container(
 
-          decoration: BoxDecoration(
-              image: DecorationImage(image: AssetImage(
-                  "images/background.jpg"
-              ))
-          ),
+
+          padding: const EdgeInsets.all(36.0),
 
 
           child: Padding(
-            padding: const EdgeInsets.all(36.0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                SizedBox(
-                  height: 150.0,
-                  child: Image.asset(
-                    "images/qykbuddy.png",
-                    fit: BoxFit.contain,
+
+            padding: const EdgeInsets.only(top: 50.0),
+            child: SingleChildScrollView(
+              child: Column(
+
+                children: <Widget>[
+
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 20.0),
+                    child: Text("STAFF REGISTRATION", style:
+                    TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w700,
+                      fontSize: 25.0,
+                    ),),
                   ),
-                ),
-                SizedBox(height: 15.0),
 
 
-                emailorphoneField,
-                SizedBox(height: 15.0),
+                  SizedBox(height: 8.0,),
 
-                passwordField,
-                SizedBox(
-                  height: 15.0,
-                ),
+
+                  nameField,
+                  SizedBox(height: 10.0),
+                  contactField,
+                  SizedBox(height: 10.0),
+                  addressField,
+                  SizedBox(
+                    height: 10.0,
+                  ),
+                  emailField,
+                  SizedBox(
+                    height: 10.0,
+                  ),
+
+                  designationField,
+                  SizedBox(
+                    height: 10.0,
+                  ),
+
+                  departmentField,
+                  SizedBox(
+                    height: 10.0,
+                  ),
+
+
+                  yearField,
+                  SizedBox(
+                    height: 10.0,
+                  ),
+
+
+                  passwordField,
+                  SizedBox(
+                    height: 10.0,
+                  ),
+
 
 //                loginButon,
 //                SizedBox(
 //                  height: 8.0,
 //                ),
 
-                SizedBox(
 
-                  height: 4.0,width: 22.0,
-                ),
+                  SizedBox(
 
-                signupButon,
-                SizedBox(
-                  height: 8.0,
-                ),
-
-                SizedBox(
-                  height: 18.0,width: 22.0,
-                ),
-                new GestureDetector(
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => MyHomePage()),
-                    );
-                  },
-                  child: new Text("Not yet registered ? , Signup",
-                  style: TextStyle(
-                    color: Colors.white,
-                    decoration: TextDecoration.underline,
-                    fontSize: 17.0,
-                  ),),
-                ),
+                    height: 8.0, width: 22.0,
+                  ),
 
 
+                  signupButon,
+                  SizedBox(
+                    height: 4.0,
 
-                Padding(padding: EdgeInsets.only(top: 11.0)),
+                  ),
+
+                  SizedBox(
+                    height: 4.0, width: 22.0,
+                  ),
+                  new GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Login()),
+                      );
+                    },
+                    child: new Text("Are you a Student? , Register as Student",
+                      style: TextStyle(
+                        color: Colors.white,
+                        decoration: TextDecoration.underline,
+                        fontSize: 17.0,
+                      ),),
+                  ),
+
+                  Padding(padding: EdgeInsets.only(top: 2.0)),
 
 
-                new GestureDetector(
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => Dashboard()),
-                    );
-                  },
-                  child: new Text(">> SKIP",
-                    style: TextStyle(
-                      color: Colors.white,
-                      decoration: TextDecoration.underline,
-                      fontSize: 17.0,
-                    ),),
-                ),
+                  new GestureDetector(
+//                    onTap: () {
+//                      Navigator.push(
+//                        context,
+//                        MaterialPageRoute(builder: (context) => Dashboard()),
+//                      );
+//                    },
+                    child: new Text(">> SKIP",
+                      style: TextStyle(
+                        color: Colors.white,
+                        decoration: TextDecoration.underline,
+                        fontSize: 17.0,
+                      ),),
+                  ),
 
-//
 
-              ],
+                ],
+              ),
             ),
+
           ),
+
         ),
       ),
     );
