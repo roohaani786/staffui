@@ -1,6 +1,6 @@
 # qykbuddy
 
-A new Commercial application.
+A new Commercial application UI modules
 
 ## Getting Started
 
